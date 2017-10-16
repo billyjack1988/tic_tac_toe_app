@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'rubygems'
 require_relative 'new_board.rb'
 require_relative 'human.rb'
 require_relative 'console_random_ai.rb'
