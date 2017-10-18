@@ -16,3 +16,8 @@
       var s = new Audio('/img/sound2.mp3');
       s.play();
   }
+
+  function tiesound() {
+      var s = new Audio('/img/git_it.mp3');
+      s.play();
+  }

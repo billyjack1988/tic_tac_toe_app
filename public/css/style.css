@@ -36,6 +36,7 @@ ul {
 }
 
 #board {
+    background-color: yellowgreen;
     margin: 0 auto;
     margin-top: 4%;
     margin-bottom: 3%;
@@ -64,7 +65,8 @@ ul {
 
 .board-data {
     background: transparent;
-    font-size: 30px;
+    font-size: 70px;
+    padding: 40px;
     border: none;
 }
 
@@ -133,5 +135,17 @@ footer {
 
 footer {
     padding-top: 100px;
+    text-align: center;
+}
+
+#box {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: transparent;
+    padding: auto;
+    border-radius: 3vh;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-top: 0%;
     text-align: center;
 }
