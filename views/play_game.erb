@@ -1,14 +1,7 @@
 <link rel = "stylesheet" href = "css/style.css">
-
-<br><div class="form-container">
     <p><%= current_player_name %> is <%= current_player.marker %>. <%= current_player_name %> it is your turn, please pick a valid place on the board.</p>
-</div>
-
-
-
 <form action="get_move" method="post">
- <body>
-        <div id = "box">
+    <div id = "box">
        <table id='board'>
             <tr>
                 <td id='top-left'><%= board[0] %></td>
@@ -26,8 +19,7 @@
                 <td id='bottom-right'><%= board[8] %></td>
             </tr>
         </table>
-        
-                    <table id='board'><center>
+                <table id='board'><center>
                 <tr>
                     <td id='top-left'><type='submit' name="square" value='<%= board[0] %>'></td>
                     <td id='top-center'><type='submit' name="square" value='<%= board[1] %>'></td>
@@ -45,4 +37,4 @@
                 </tr>
         </table>
         </form>
-</div></body></center>
+</div></center>
