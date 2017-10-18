@@ -19,7 +19,7 @@ ul {
 .back_gr {
     background-image: url("/img/showme.png");
     /*background-size: cover;*/
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
