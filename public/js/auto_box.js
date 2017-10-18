@@ -21,3 +21,13 @@
       var s = new Audio('/img/git_it.mp3');
       s.play();
   }
+
+  function playsound() {
+      var s = new Audio('/img/getswifty.mp3');
+      s.play();
+  }
+
+  function playsound2() {
+      var s = new Audio('/img/rmtheme.mp3');
+      s.play();
+  }
