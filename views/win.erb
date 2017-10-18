@@ -2,11 +2,13 @@
 <center>
 <div class='form-container'>
 	<h1 id='results-header'><%= current_player.marker %> is the winner. Great job <%= current_player_name %>!!</h1>
+	<%winning(session[:current_player_name])%>
 
 	<p><a class="myButton" href='/'>Play Again</a></p>
 
 	
 </div>
+
 <body  onload = "playsound()">
 </body>
 </center>

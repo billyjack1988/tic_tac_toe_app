@@ -149,3 +149,15 @@ footer {
     margin-top: 0%;
     text-align: center;
 }
+
+#box2 {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: black;
+    padding: auto;
+    border-radius: 3vh;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-top: 0%;
+    text-align: center;
+}

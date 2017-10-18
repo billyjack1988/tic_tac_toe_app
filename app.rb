@@ -1,17 +1,19 @@
 require 'sinatra'
+require 'pg'
 require_relative 'new_board.rb'
 require_relative 'human.rb'
 require_relative 'console_random_ai.rb'
 require_relative 'console_sequential_ai.rb'
 require_relative 'unbeatable_ai.rb'
+require_relative 'data_func.rb'
 enable :sessions
 
 
 
 get '/' do
     session[:board] = Board.new(["","","","","","","","",""])
-	
-    erb :home, :layout => :layout, :locals => { :board => session[:board].board_positions }
+	scores = score_list()
+    erb :home, :layout => :layout, :locals => { :board => session[:board].board_positions}, locals: {score: scores}
 end
 
 get '/player_1_name' do

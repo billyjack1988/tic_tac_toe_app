@@ -19,6 +19,16 @@ body {
 }
 </style>
     </header>
+<div id = "box2">
+<p>SCORE BOARD</p>
+<%score.each do |row|%>
+<br>
+<%row.each do |item|%>
+<%=item%>
+<%end%>
+<br>
+<%end%>
+</div>
  </body> 
  <script src = "/js/auto_box.js">
 </script>  
