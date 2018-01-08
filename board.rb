@@ -38,7 +38,7 @@ class grid
         grid[1] == symbol && grid[4] == symbol && grid[7] == symbol ||
         grid[2] == symbol && grid[5] == symbol && grid[8] == symbol ||
         grid[0] == symbol && grid[4] == symbol && grid[8] == symbol ||
-        grid[2] == symbol && grid[4] == symbol && grid[6] == symbol
+        grid[2] == symbol && grid[4] == symbol && grid[6] == symbol ||
 
     end
 end

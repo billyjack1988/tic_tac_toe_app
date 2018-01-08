@@ -11,9 +11,16 @@ enable :sessions
 
 
 get '/' do
-    session[:board] = Board.new(["","","","","","","","",""])
+	var_b = 9
+	board_arr = []
+	var_b.times do
+		board_arr.push(" ")
+	end 
+	p board_arr
+	session[:board] = Board.new(board_arr)
 	scores = score_list()
-    erb :home, :layout => :layout, :locals => { :board => session[:board].board_positions}, locals: {score: scores}
+	p "#{scores.class}"
+    erb :home, :layout => :layout, :locals => { :board => session[:board].board_positions, score: scores}
 end
 
 get '/player_1_name' do
