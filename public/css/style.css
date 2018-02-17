@@ -161,3 +161,73 @@ footer {
     margin-top: 0%;
     text-align: center;
 }
+
+* {
+    outline: 0;
+}
+
+h1 {
+    color: rgb(232, 124, 124);
+    text-align: center;
+}
+
+#game {
+    white-space: nowrap;
+    text-align: center;
+}
+
+#game button {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+#game button.top {
+    border-top: 0;
+}
+
+#game button.bottom {
+    border-bottom: 0;
+}
+
+#game button.right {
+    border-right: 0;
+}
+
+#game button.left {
+    border-left: 0;
+}
+
+#game button * {
+    pointer-events: none;
+}
+
+.icon-remove,
+.icon-circle-blank {
+    font-size: 57px;
+    color: black;
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+.icon-circle-blank:before {
+    content: "\f10c";
+}
+
+.icon-remove:before {
+    content: "\f00d";
+}
+
+.box_2 {
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+    padding: auto;
+    border-radius: 3vh;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-top: 0%;
+    text-align: center;
+}

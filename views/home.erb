@@ -1,4 +1,4 @@
-require 'json/ext'
+
 
 <link rel = "stylesheet" href = "css/style.css">
 
@@ -17,12 +17,19 @@ body {
     background-position: center;
 }
 </style>
+ <form  method= "post" action= "/the_new_one">
+    <input class= "myButton" type= "submit" value = "The New Game!!">
+</form>
     </header>
 <div id = "box2">
-<p>SCORE BOARD</p>
-<%hash = Hash[score.collect { |item, row| [item, row] } ]%>
-<%puts {hash}.to_json%>
-<%=hash%>
+<%score.each do |row|%>		 
+ <br>		
+ <%row.each do |item|%>		 
+ <%=item%>		 
+ <%end%>		
+ <br>		
+ <%end%>
+
 
 </div>
  </body> 

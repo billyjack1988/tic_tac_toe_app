@@ -11,16 +11,9 @@ enable :sessions
 
 
 get '/' do
-	var_b = 9
-	board_arr = []
-	var_b.times do
-		board_arr.push(" ")
-	end 
-	p board_arr
-	session[:board] = Board.new(board_arr)
+	session[:board] = Board.new(["","","","","","","","",""])
 	scores = score_list()
-	p "#{scores.class}"
-    erb :home, :layout => :layout, :locals => { :board => session[:board].board_positions, score: scores}
+    erb :home, :layout => :layout, :locals => { :board => session[:board].board_positions}, locals: {score: scores}	
 end
 
 get '/player_1_name' do
@@ -141,4 +134,10 @@ get '/change_player' do
 		redirect '/get_move'
 		
 	
+end
+
+post '/the_new_one' do
+
+erb :theNewOne
+
 end
