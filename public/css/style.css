@@ -16,10 +16,12 @@ ul {
     color: black;
 }
 
-.back_gr {
-    background-image: url("/img/showme.png");
+html {
+    background: url(/img/showme.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @font-face {
@@ -230,4 +232,8 @@ h1 {
     margin-left: 35%;
     margin-top: 0%;
     text-align: center;
+}
+
+.form_div {
+    margin: 18px 0;
 }
